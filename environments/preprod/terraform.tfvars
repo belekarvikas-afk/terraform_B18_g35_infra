@@ -1,19 +1,19 @@
 rgs = {
   rg1 = {
-    name     = "rg-chor-dev"
+    name     = "rg-mumbai"
     location = "centralindia"
   }
   rg2 = {
-    name     = "rg-chor-dev-2"
+    name     = "rg-Nashik"
     location = "centralindia"
   }
 }
 
 vnets = {
   vnet1 = {
-    name                = "vnet-chor-dev"
+    name                = "vnet-mumbai"
     location            = "centralindia"
-    resource_group_name = "rg-chor-dev"
+    resource_group_name = "rg-mumbai"
     address_space       = ["10.0.0.0/16"]
   }
 }
@@ -21,20 +21,20 @@ vnets = {
 subnets = {
   snet1 = {
     name                 = "frontend-subnet-dev"
-    resource_group_name  = "rg-chor-dev"
-    virtual_network_name = "vnet-chor-dev"
+    resource_group_name  = "rg-mumbai"
+    virtual_network_name = "vnet-mumbai"
     address_prefixes     = ["10.0.1.0/24"]
   }
   snet2 = {
     name                 = "backend-subnet-dev"
-    resource_group_name  = "rg-chor-dev"
-    virtual_network_name = "vnet-chor-dev"
+    resource_group_name  = "rg-mumbai"
+    virtual_network_name = "vnet-mumbai"
     address_prefixes     = ["10.0.2.0/24"]
   }
   snet3 = {
     name                 = "database-subnet-dev"
-    resource_group_name  = "rg-chor-dev"
-    virtual_network_name = "vnet-chor-dev"
+    resource_group_name  = "rg-mumbai"
+    virtual_network_name = "vnet-mumbai"
     address_prefixes     = ["10.0.3.0/24"]
   }
 }
